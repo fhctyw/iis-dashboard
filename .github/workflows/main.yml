@@ -13,16 +13,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
-    # Setup Node.js
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
         node-version: '20'
 
-    # Install dependencies
     - name: Install dependencies
       run: npm install
 
-    # Build the project
     - name: Build code
       run: npm run build
